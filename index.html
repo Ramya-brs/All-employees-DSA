@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Time Needed to Inform All Employees | DSA</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <h2>Time Needed to Inform All Employees</h2>
+  </head>
+  <body>
+    <div class="container" >
+    <main role="main" style="margin-bottom: 100px;">
+      <h5 class="text-start">Implement a code for Time Needed to Inform All Employees</h5>
+      <p class="text-start">
+        This code defines a numOfMinutes function that takes the number of employees n, the head of the company headID, the manager array manager, and the informTime array informTime. It uses a depth-first search to traverse the tree and calculates the time needed to inform all employees
+      </p>
+
+      
+        <label for="numberOfEmployees">Number of Employees:</label>
+        <input type="number" id="numberOfEmployees" min="1" value="1">
+        <br><br>
+
+        <label for="headID">Head of the Company ID:</label>
+        <input type="number" id="headID" min="0" value="0">
+        <br><br>
+
+        <label for="manager">Manager Array (comma-separated):</label>
+        <input type="text" id="manager" placeholder="e.g., -1" value="-1">
+        <br><br>
+
+        <label for="informTime">Inform Time Array (comma-separated):</label>
+        <input type="text" id="informTime" placeholder="e.g., 0" value="0">
+        <br><br>
+
+        <button onclick="calculateMinutes()">Calculate Minutes</button><br><br>
+
+        <div id="output"></div><br>
+    </main>
+  </div>
+    <script src="assets/js/time-needed-employees.js" defer></script>
+  </body>
+</html>
